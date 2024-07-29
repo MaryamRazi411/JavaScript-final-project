@@ -1,0 +1,95 @@
+h1{
+    margin: 0;
+    direction: ltr;
+}
+ 
+.tictoc-wrapper{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+ 
+.tictoc-wrapper.disabled{
+    opacity: 0.5;
+}
+ 
+#bg{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(223, 34, 34);
+}
+ 
+.row{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ 
+.row-2{
+    top: 210px;
+}
+ 
+.row-3{
+    top: 420px;
+}
+ 
+.col-4{
+    background-color: white;
+    width: 180px;
+    height: 180px;
+    float: left;
+    margin-right: 30px; 
+    cursor: pointer;
+}
+ 
+.col-4 img{
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+}
+ 
+.col-4.c3,.col-4.c6,.col-4.c9{
+    margin-right: 0; 
+}
+ 
+.turn{
+    position: absolute;
+    top: -110px;
+    right: 310px;
+}
+ 
+.player{
+    position: absolute;
+    width: 100px;
+}
+ 
+.player.active{
+    animation: blink 1s infinite;
+}
+ 
+#playerCircle{
+    top: 320px;
+    right: 330px;
+}
+ 
+#playerX{
+    top: 320px;
+    left: 330px;
+     
+}
+ 
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+ 
+    50%{
+        opacity: 0;
+    }
+ 
+    100%{
+        opacity: 1;
+    }
+}
